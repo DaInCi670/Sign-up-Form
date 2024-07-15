@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="imgs/title-img.png" type="image/x-icon" />
+    <title>Aurora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="main-image"></div>
+      <div class="form-item-container">
+        <h1 class="main-heading">
+          Find your style <span>with yourslelf</span>
+        </h1>
+
+        <form action="/submit" method="post">
+          <fieldset>
+            <h3 class="main-sub-heading">Aurora Fashion Brand</h3>
+            <div class="container-1">
+              <ul>
+                <li>
+                  <label for="first-name">FIRST NAME</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="last-name">LAST NAME</label>
+                  <input type="text" id="last-name" name="last-name" required />
+                </li>
+              </ul>
+            </div>
+            <div class="container-2">
+              <ul>
+                <li>
+                  <label for="email">EMAIL</label>
+                  <input type="email" id="email" required />
+                </li>
+                <li>
+                  <label for="phone-num">PHONE NUMBER</label>
+                  <input
+                    type="number"
+                    id="phone-num"
+                    minlength="10"
+                    maxlength="10"
+                    required
+                  />
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <label for="password">PASSWORD</label>
+                  <input
+                    id="password"
+                    type="password"
+                    minlength="6"
+                    maxlength="10"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="confirm-password">CONFIRM PASSOWRD</label>
+                  <input
+                    id="confirm-password"
+                    type="password"
+                    minlength="6"
+                    maxlength="10"
+                    required
+                  />
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <button type="submit">Create Account</button>
+          <h4 class="confirm-login">
+            Already have an account? <a href="#">Log in</a>
+          </h4>
+        </form>
+      </div>
+      <div class="main-text-container">
+        <h1 class="main-text">Aurora</h1>
+      </div>
+    </div>
+  </body>
+</html>
